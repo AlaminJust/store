@@ -7,8 +7,12 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
       path: '',
-      component: MainLayoutComponent, children: [
-        { path:'', component: CreateProfileComponent }
+      component: MainLayoutComponent,
+      children: [
+        { 
+          path:'',
+          component: CreateProfileComponent
+        }
       ]
   }
 ]
