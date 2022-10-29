@@ -12,6 +12,10 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
+    path: 'create-account', loadChildren: () =>
+    import('./pages/profile/profile.module').then((m) => m.ProfileModule)
+  },
+  {
     path: '**',
     component: PageNotFoundComponent
   }

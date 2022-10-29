@@ -7,14 +7,14 @@ import { DetailComponent } from '../detail/detail.component';
 
 const routes: Routes = [
   {
-    path: 'home', component: MainLayoutComponent,
-    children: [
+    path: '', component: MainLayoutComponent,
+    children:[
       {
-        path: '',
+        path: 'home',
         component: HomeComponent
       },
       {
-        path: 'details',
+        path: 'detail',
         component: DetailComponent
       }
     ]
